@@ -79,7 +79,22 @@
 
                     <h1>Take  <span>yourself </span>to the tropics</h1>
                     <h6 class="subHeadline">in a single sip!</h6>
-                    <a class="btn btn-light" href="https://www.paypal.com/cgi-bin/webscr">BUY NOW</a>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="business" value="debbi@senoritalimonita.com">
+                        <input type="hidden" name="item_name" value="Senorita Limonita Two Bottle Pack">
+                        <input type="hidden" name="item_number">
+                        <input type="hidden" name="amount" value="20.00">
+                        <input type="hidden" name="button_subtype" value="products">
+                        <input type="hidden" name="shipping" value="12.00">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="bn" value="godaddy_hosting_WPS_US">
+                        <button type="submit" class="btn btn-light" id="submit" value="submit" />
+                            BUY NOW
+                        </button>
+                    </form>
+                    <p class="priceTag"><i>9.99$ per bottle</i></p>
                 </div>
             </div>
             <!--
@@ -286,9 +301,9 @@
                     <div class="team">
                         <img class="img-responsive center-block" src="img/team/Limonita-bikini.jpg" alt="Limonita bikini.jpg">
                         <h4>LIMONITA CLASSIC</h4>
-                        <p>Designer</p>
+                        <p>Some text</p>
                         <div class="swimwearButton">
-                            <a class="btn btn-light" href="https://www.paypal.com/cgi-bin/webscr">Buy Now</a>
+                            <a class="btn btn-light swimwear" href="#">BUY NOW</a>
                         </div>
                     </div>
                 </div>
@@ -296,9 +311,9 @@
                     <div class="team">
                         <img class="img-responsive center-block" src="img/team/Limonita-bikini-2.jpg" alt="2">
                         <h4>LIMONITA TWIST TANK</h4>
-                        <p>Developer</p>
+                        <p>Some text</p>
                         <div class="swimwearButton">
-                            <a class="btn btn-light" href="https://www.paypal.com/cgi-bin/webscr">Buy Now</a>
+                            <a class="btn btn-light swimwear" href="#">BUY NOW</a>
                         </div>
                     </div>
                 </div>
@@ -306,9 +321,9 @@
                     <div class="team">
                         <img class="img-responsive center-block" src="img/team/Limonita-bikini-3.jpg" alt="3">
                         <h4>LIMONITA SHAPER</h4>
-                        <p>Photographer</p>
+                        <p>Some text</p>
                         <div class="swimwearButton">
-                           <a class="btn btn-light" href="https://www.paypal.com/cgi-bin/webscr">Buy Now</a>
+                           <a class="btn btn-light swimwear" href="#">BUY NOW</a>
                         </div>
                     </div>
                 </div>
@@ -411,7 +426,7 @@
                 <a href="http://twitter.com/#!/SenoritaLimonit" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                 <a href="https://www.linkedin.com/in/senorita-limonita-863ab424" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
             </div>
-            <p class="footer">|Senorita Limonita Inc| skamvej 27 | Arizona PO | </p>
+            <p class="footer">| Senorita Limonita Inc | skamvej 27 | Arizona PO | </p>
             <a href="https://vouzalis.com/" target="_blank"><p class="footer">&copy; 2016 Vouzalis Development & Design</p></a>
         </div>
     </footer>

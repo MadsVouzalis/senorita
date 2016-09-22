@@ -139,6 +139,7 @@ Buttons Styles
   color: #fff;
   text-decoration: none;
 }
+
 .btn-block {
   background: #24242a;
   padding: 15px 0;
@@ -167,6 +168,9 @@ Buttons Styles
 
 .swimwearButton {
   margin-top: -30px;
+}
+.btn-light.swimwear:hover {
+  color: #000;
 }
 
 /* ==========================================================================
